@@ -14,3 +14,4 @@ yarn-error.log*
 
 # SelfConfig
 package-lock.json
+jsconfig.json

@@ -1,28 +1,30 @@
+// MARK MV或者视频播放接口
 import fly from '@/utils/request'
+/**
+ * 获取mv播放地址
+ * @param {String} id // mv的id
+ */
+export const getMvUrlAPI = ({ id }) => fly.request({
+  url: '/mv/url',
+  body: {
+    id
+  }
+})
 
-export function getMvData(mvid) {
-  return fly.request({
-    url: '/mv',
-    body: {
-      mvid
-    }
-  })
-}
+/**
+ * 获取视频播放地址
+ * @param {String} id // 视频的id
+ */
+export const getVideoUrlAPI = ({ id }) => fly.request({
+  url: '/video/url',
+  body: {
+    id
+  }
+})
 
-export function getVideoData(id) {
-  return fly.request({
-    url: '/video',
-    body: {
-      id
-    }
-  })
-}
-
-export function playMvOrVideo(url) {
-  return fly.request({
-    url: '/mv/url',
-    body: {
-      url
-    }
-  })
-}
+// export const playMvOrVideoAPI = (url) => fly.request({
+//   url: '/mv/url',
+//   body: {
+//     url
+//   }
+// })

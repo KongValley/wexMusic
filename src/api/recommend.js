@@ -1,93 +1,59 @@
+// MARK 各类推荐接口
 import fly from '@/utils/request'
 
 /**
  * 获取每日推荐歌单,可获得每日推荐歌单(需要登录)
- *
- * @author Da Peng
- * @export
- * @returns
  */
-export function getRecommendResourceAPI() {
-  return fly.request({
-    url: '/recommend/resource'
-  })
-}
+export const getRecommendResourceAPI = () => fly.request({
+  url: '/recommend/resource'
+})
 
 /**
  * 获取每日推荐歌曲,可获得每日推荐歌曲(需要登录)
- *
- * @author Da Peng
- * @export
- * @returns
  */
-export function getRecommendSongsAPI() {
-  return fly.request({
-    url: '/recommend/songs'
-  })
-}
+export const getRecommendSongsAPI = () => fly.request({
+  url: '/recommend/songs'
+})
 
-export function getNewAlbumAPI({ limit = 50, offset = 0 }) {
-  return fly.request({
-    url: '/album',
-    body: {
-      limit,
-      offset
-    }
-  })
-}
+/**
+ * 获取推荐mv
+ */
+export const getPersonalizedMvAPI = () => fly.request({
+  url: '/personalized/mv'
+})
 
-export function getNewAlbumDetailAPI({ id, limit = 50, offset = 0 }) {
-  return fly.request({
-    url: '/album',
-    body: {
-      id,
-      limit,
-      offset
-    }
-  })
-}
+/**
+ * 获取推荐歌单
+ */
+export const getPersonalizedPlaylistAPI = () => fly.request({
+  url: '/personalized'
+})
 
-export function getFirstMvAPI(limit = 30) {
-  return fly.request({
-    url: '/mv/first',
-    body: {
-      limit
-    }
-  })
-}
+/**
+ * 获取推荐新音乐
+ */
+export const getPersonalizedNewSongAPI = () => fly.request({
+  url: '/personalized/newsong'
+})
 
-export function getPersonalizedMvAPI() {
-  return fly.request({
-    url: '/personalized/mv'
-  })
-}
+/**
+ * 获取推荐电台
+ */
+export const getPersonalizedDjProgramAPI = () => fly.request({
+  url: '/personalized/djprogram'
+})
 
-export function getPersonalizedPlaylistAPI() {
-  return fly.request({
-    url: '/personalized'
-  })
-}
+/**
+ * 获取推荐节目
+ */
+export const getRecommendProgramAPI = () => fly.request({
+  url: '/program/recommend'
+})
 
-export function getPersonalizedNewSongAPI() {
-  return fly.request({
-    url: '/personalized/newsong'
-  })
-}
-
-export function getPersonalizedDjProgramAPI() {
-  return fly.request({
-    url: '/personalized/djprogram'
-  })
-}
-
-export function getRecommendProgramAPI() {
-  return fly.request({
-    url: '/program/recommend'
-  })
-}
-
-export function getPersonalizedPrivatecontentAPI() {
-  return fly.request({
-    url: '/personalized/privatecontent'
-  })
-}
+// TBD 独家放送待定
+/**
+ * 获取独家放送
+ */
+export const getPersonalizedPrivatecontentAPI = () => fly.request({
+  url: '/personalized/privatecontent'
+})

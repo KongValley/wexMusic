@@ -1,3 +1,4 @@
+// MARK 登录接口
 import fly from '@/utils/request'
 
 /**
@@ -5,38 +6,34 @@ import fly from '@/utils/request'
  *
  * @author Da Peng
  * @export
- * @param {邮箱} email
- * @param {密码} password
+ * @param {String} email
+ * @param {String} password
  * @returns
  */
-export function loginByEmail({ email, password }) {
-  return fly.request({
-    url: '/login',
-    body: {
-      email,
-      password
-    }
-  })
-}
+export const loginByEmailAPI = ({ email, password }) => fly.request({
+  url: '/login',
+  body: {
+    email,
+    password
+  }
+})
 
 /**
  * 手机登陆
  *
  * @author Da Peng
  * @export
- * @param {手机号} phone
- * @param {密码} password
+ * @param {String} phone
+ * @param {String} password
  * @returns
  */
-export function loginByPhone({ phone, password }) {
-  return fly.request({
-    url: '/login/cellphone',
-    body: {
-      phone,
-      password
-    }
-  })
-}
+export const loginByPhoneAPI = ({ phone, password }) => fly.request({
+  url: '/login/cellphone',
+  body: {
+    phone,
+    password
+  }
+})
 
 /**
  * 刷新登陆状态
@@ -45,11 +42,9 @@ export function loginByPhone({ phone, password }) {
  * @export
  * @returns
  */
-export function loginRefresh() {
-  return fly.request({
-    url: '/login/refresh'
-  })
-}
+export const loginRefreshAPI = () => fly.request({
+  url: '/login/refresh'
+})
 
 /**
  * 获取登陆状态
@@ -58,11 +53,9 @@ export function loginRefresh() {
  * @export
  * @returns
  */
-export function loginStatus() {
-  return fly.request({
-    url: '/login/status'
-  })
-}
+export const getloginStatusAPI = () => fly.request({
+  url: '/login/status'
+})
 
 /**
  * 账号退出登录
@@ -71,8 +64,7 @@ export function loginStatus() {
  * @export
  * @returns
  */
-export function logout() {
-  return fly.request({
-    url: '/logout'
-  })
-}
+export const logOutAPI = () => fly.request({
+  url: '/logout'
+})
+

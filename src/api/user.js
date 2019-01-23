@@ -1,3 +1,4 @@
+// MARK 用户相关接口
 import fly from '@/utils/request'
 
 /**
@@ -8,7 +9,7 @@ import fly from '@/utils/request'
  * @param {用户id} uid
  * @returns
  */
-export function getUserDetail(uid) {
+export function getUserDetailAPI(uid) {
   return fly.request({
     url: '/user/detail',
     body: uid

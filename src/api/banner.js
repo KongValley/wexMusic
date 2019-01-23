@@ -1,3 +1,4 @@
+// MARK banner接口
 import fly from '@/utils/request'
 
 /**
@@ -8,8 +9,6 @@ import fly from '@/utils/request'
  * @export
  * @returns
  */
-export function getBanner() {
-  return fly.request({
-    url: '/banner'
-  })
-}
+export const getBanner = () => fly.request({
+  url: '/banner'
+})
