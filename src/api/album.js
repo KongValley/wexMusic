@@ -29,3 +29,19 @@ export const getAlbumSongsAPI = ({ id, limit = 50, offset = 0 }) => fly.request(
     offset
   }
 })
+
+/**
+ * 获取专辑内容
+ * 传入专辑 id, 可获得专辑内容
+ *
+ * @author Da Peng
+ * @export
+ * @param {Number} id // 专辑id
+ * @returns
+ */
+export const getAlbumAPI = ({ id }) => fly.request({
+  url: '/album',
+  body: {
+    id
+  }
+})
