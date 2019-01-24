@@ -16,22 +16,12 @@ export const getAllToplistDetailAPI = () => fly.request({
 })
 
 /**
- *
- * @param {*} param0
+ * 获取mv排行榜
+ * @param {Number} limit
+ * @param {Number} offset
  */
 export const getTopMvAPI = ({ limit = 30, offset = 0 }) => fly.request({
   url: '/top/mv',
-  body: {
-    limit,
-    offset
-  }
-})
-
-/**
- * 获取歌手榜单
- */
-export const getTopArtistAPI = ({ limit = 50, offset = 0 }) => fly.request({
-  url: '/toplist/artist',
   body: {
     limit,
     offset
@@ -73,6 +63,9 @@ export const getTopListAPI = ({ idx }) => fly.request({
   }
 })
 
+/**
+ * 获取歌手榜单
+ */
 export const getToplistArtistAPI = () => fly.request({
   url: '/toplist/artist'
 })
