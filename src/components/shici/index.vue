@@ -58,14 +58,14 @@ export default {
   &__text {
     display: flex;
     justify-content: center;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: justify; // 使用两端对齐，避免文本过长产生的换行空白
   }
 
   &__footer {
     padding-top: 10px;
-    padding-right: 15px;
+    padding-right: 30px;
     text-align: right;
   }
 }
