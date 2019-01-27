@@ -6,7 +6,6 @@ import fly from '@/utils/request'
  * @param {Number} limit
  * @param {Number} offset
  */
-
 export const getNewAlbumAPI = ({ limit = 50, offset = 0 }) => fly.request({
   url: '/top/album',
   body: {

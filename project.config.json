@@ -9,7 +9,7 @@
 	},
 	"miniprogramRoot": "dist/",
 	"compileType": "miniprogram",
-	"appid": "",
+	"appid": "wx557d8d1b591ba1c2",
 	"projectname": "wexmusic",
 	"condition": {
 		"search": {

@@ -1,5 +1,5 @@
-var Fly = require('flyio/dist/npm/wx')
-var fly = new Fly()
+const Fly = require('flyio/dist/npm/wx')
+const fly = new Fly()
 
 const BASEURL = 'http://47.107.32.22:3000'
 const TIMEOUT = 5000
