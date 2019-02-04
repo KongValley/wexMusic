@@ -10,6 +10,7 @@
     "build": "node build/build.js",
     "lint": "eslint --fix --ext .js,.vue src",
     "commit": "git cz",
+    "add": "git add .",
     "release": "standard-version"
   },
   "dependencies": {

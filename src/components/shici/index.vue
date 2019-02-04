@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'shici_component',
+  name: 'component_shici',
   data() {
     return {
 
@@ -52,7 +52,7 @@ export default {
   flex-direction: column;
   width: 100%;
   background: transparent;
-  font-family: 'fzss';
+  font-family: 'fzss',Arial, "Helvetica Neue", Helvetica, sans-serif;
   justify-content: center;
 
   &__text {
