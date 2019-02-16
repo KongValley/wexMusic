@@ -1,5 +1,5 @@
 <template>
-  <div class="p_login">
+  <div class="p-login">
   </div>
 </template>
 
@@ -15,6 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@/style/common/var";
 .p_login {
   width: 100%;
   height: 100%;

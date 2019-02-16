@@ -18,7 +18,12 @@ export function formatTime(date) {
   return `${t1} ${t2}`
 }
 
+export const oneOfList = (value, valueList) => {
+  valueList.map((_val) => { if (_val === value) return true })
+  return false
+}
+
 export default {
   formatNumber,
-  formatTime
+  formatTime,
 }

@@ -53,8 +53,8 @@ $--box-shadow-dark: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14
 /* Font
 -------------------------- */
 $--font-path: 'fonts' !default;
-$--font-size-base: 14px !default;
-$--font-size-small: 13px !default;
+$--font-size-base: 16px !default;
+$--font-size-small: 12px !default;
 $--font-size-large: 18px !default;
 $--font-color-disabled-base: #bbb !default;
 $--font-weight-base: normal !default;
@@ -63,7 +63,7 @@ $--font-line-height-primary: 24px !default;
 
 /* Button
 -------------------------- */
-$--button-font-size: 18px !default;
+$--button-font-size: $--font-size-large !default;
 $--button-font-weight-default: $--font-weight-base;
 $--button-font-weight-large: $--font-weight-large;
 
@@ -91,4 +91,9 @@ $--button-hover-tint-percent: 20%;
 
 $--button-active-transition: $--all-transition;
 
+/* Input
+-------------------------- */
+$--input-font-size: $--font-size-base;
+$--input-label-font-size: $--font-size-small;
+$--input-
 

@@ -28,6 +28,7 @@ module.exports = {
       '@': resolve('src'),
       '_c': resolve('src/components'),
       '_p': resolve('src/pages'),
+      '_s': resolve('src/style'),
       vue: 'mpvue'
     },
     symlinks: false,

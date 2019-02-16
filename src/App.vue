@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~@/scss/index';
+@import '~@/style/index';
 .container {
   height: 100%;
   display: flex;
